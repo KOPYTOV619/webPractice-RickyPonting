@@ -1,0 +1,293 @@
+@media (max-width: 1199px)
+    .main_block
+        &_contant
+            .h1_text
+                font-size: 48px
+    .services_block
+        &_h2_description
+            width: 45%
+        &_carts
+            &_item
+                &_info
+                    margin-top: 10px
+                    
+                    &_text
+                        font-size: 18px
+    .clients_block
+        &_content
+            &_cart
+                padding: 40px 20px
+                &_icon
+                    left: 300px
+                    width: 50px
+                &_text
+                    margin-top: 15px
+                    font-size: 16px
+                &_name
+                    margin-top: 10px
+    .together_block
+        &_imgs
+            width: 100%
+        &_content
+            h2
+                width: 100%
+            &_h2_description
+                width: 100%
+    footer
+        .footer_links
+            &_item
+                margin-bottom: 5px
+                a
+                    font-size: 14px
+        .footer_subscribe
+            &_text
+                font-size: 14px
+            #inputPassword
+                font-size: 14px
+            .btn-primary
+                width: 140px
+                font-size: 14px
+
+@media (max-width: 991px)
+    .main_block
+        min-height: 200px
+        &_contant
+            .h1_text
+                margin-top: 60px
+                font-size: 42px
+                line-height: 60px
+            .h1_description
+                margin-top: 20px 
+                font-size: 16px
+            .main_block_btn
+                margin-top: 30px 
+        &_img
+            width: 100%
+            margin-top: 60px
+    .services_block
+        h2  
+            font-size: 32px
+            margin-top: 100px
+        &_h2_description
+            margin-top: 0
+            width: 90%
+        &_carts
+            margin-top: 30px
+            &_item
+                &_info
+                    &_text
+                        font-size: 16px
+    .clients_block
+        h2
+            font-size: 32px
+            margin-top: 100px
+        &_h2_description
+            width: 100%
+            margin-top: 0
+        &_content
+            margin-top: 30px
+            margin-bottom: 100px
+            &_cart
+                transform: translateX(30px)
+                padding: 30px 20px
+                &_icon
+                    left: 90%
+                    width: 30px
+                &_text
+                    margin-top: 15px
+                    font-size: 14px
+                &_name
+                    margin-top: 10px
+                    font-size: 16px
+            &_img
+                transform: translateX(-30px)
+    .together_block
+        padding: 100px 0
+        &_content
+            h2
+                font-size: 32px
+            &_h2_description
+                margin-top: 0
+            &_btn
+                margin-top: 20px
+                
+@media (max-width: 766px)
+    header   
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: center
+        .hamburger
+            width: 50px
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            span
+                display: block
+                height: 3px
+                width: 100%
+                background-color: #fff
+                transition: 0.5s all
+                &:nth-child(1)
+                    margin-bottom: 6px
+                &:nth-child(3)
+                    margin-top: 6px
+            &_active
+                position: fixed
+                z-index: 500
+                span                    
+                    &:nth-child(1)
+                        transform: rotate(-45deg)
+                        margin-bottom: -2px
+                    &:nth-child(3)
+                        transform: rotate(45deg)
+                        margin-top: -2px
+                    &:nth-child(2)
+                        display: none
+        .header_items
+            .header_menu
+                position: fixed
+                justify-content: center
+                align-items: center
+                top: 0
+                right: -100%
+                width: 60%
+                height: 100vh
+                padding: 20px
+                flex-direction: column
+                background-color: rgba($color_1,.9)
+                transition: 0.6s all
+                &_active
+                    z-index: 400
+                    right: 0
+                &_item
+                    margin: 10px 0
+                    &_link
+                        padding: 0
+                        border: none
+                        font-size: 32px
+                        
+                
+    .main_block
+        min-height: 100px
+        &_contant
+            .h1_text
+                margin-top: 50px
+                font-size: 36px
+                line-height: 50px
+        &_img
+            width: 100%
+            margin-top: 50px
+        .main_block_btn
+                margin-top: 20px 
+                font-size: 14px
+                width: 180px
+                height: 45px   
+    .services_block
+        h2  
+            font-size: 32px
+            margin-top: 60px
+            text-align: center
+        &_h2_description
+            text-align: center
+        &_carts
+            width: 100%
+            flex-direction: row
+            justify-content: space-between
+            &_item
+                &_img
+                    width: 95%
+                &_info
+                    margin-bottom: 20px
+    .clients_block
+        h2
+            font-size: 32px
+            margin-top: 60px
+            text-align: center
+        &_h2_description
+            text-align: center
+        &_content
+            margin-bottom: 60px
+            display: flex
+            flex-direction: column
+            &_cart
+                padding: 30px 30px
+                transform: none
+                &_icon
+                    left: 93%
+                    width: 30px
+            &_img
+                transform: none
+    .together_block
+        padding: 60px 0
+        .row
+            display: flex
+            flex-direction: column-reverse
+            justify-content: center
+            align-items: center
+        &_content
+            display: flex
+            flex-direction: column
+                        justify-content: center
+            align-items: center
+            margin-bottom: 30px
+            h2
+                margin-top: 0
+                font-size: 32px
+                text-align: center
+            &_h2_description
+                margin-top: 0
+                text-align: center
+            &_btn
+                font-size: 14px
+                width: 180px
+                height: 45px  
+    footer
+        .footer_about
+            &_logo
+                text-align: center
+            &_copy
+                margin-top: 0
+                font-size: 12px
+                text-align: center
+            &_a
+                margin-top: 5px
+                text-align: center
+                margin-bottom: 20px   
+        .footer_links
+            &_item
+                display: none
+        .footer_subscribe
+            display: none
+        .footer_subscribe_icon
+            display: none
+
+@media (max-width: 575px)
+    .main_block
+        min-height: 100px
+        &_contant
+            .h1_text
+                margin-top: 50px
+                font-size: 28px
+                line-height: 40px
+    .services_block
+        &_h2_description
+            width: 80%
+            margin: 0 auto
+        &_carts
+            &_item
+                &_img
+                    width: 100%
+    .clients_block
+        &_h2_description
+            width: 80%
+            margin: 0 auto
+    .together_block
+        &_content
+            h2
+                width: 80%
+                margin: 0 auto
+            &_h2_description    
+                width: 80%
+                margin: 10px auto

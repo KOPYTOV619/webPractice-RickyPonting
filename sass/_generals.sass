@@ -1,0 +1,274 @@
+header
+    height: 98px
+    background: $color_1
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .hamburger
+        display: none
+    .header_items
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 0
+        .header_logo
+            @include logo
+        .header_menu
+            list-style-type: none
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin: 0
+            &_item_link
+                text-decoration: none
+                font-weight: 400
+                font-size: 16px
+                line-height: 28px
+                text-align: center
+                color: $color_2
+                margin: 0
+                transition: 0.5s all
+                &:hover
+                    color: $color_3
+
+.main_block
+    min-height: 900px
+    background: $color_1
+    &_contant
+        display: flex
+        justify-content: center
+        flex-direction: column
+        align-items: center
+        .h1_text
+            margin-top: 100px 
+            font-weight: 700
+            font-size: 62px
+            line-height: 72px
+            text-align: center
+            color: $color_4
+        .h1_description
+            margin-top: 30px 
+            font-weight: 400
+            font-size: 18px
+            line-height: 30px
+            text-align: center
+            color: $color_2
+        .main_block_btn
+            margin-top: 60px 
+            @include btn_red
+            &:hover
+                background: $color_4
+                color: $color_3
+    &_img
+        width: 100%
+        margin-top: 100px
+
+.services_block
+    h2
+        @include h2
+        margin-top: 150px
+    &_h2_description
+        @include h2_discr
+        width: 50%
+    &_carts
+        margin-top: 50px
+        display: flex
+        flex-direction: row
+        justify-content: flex-start
+        &_item
+            &_img
+                width: 95%
+            &_info
+                margin-top: 20px
+                display: flex
+                flex-direction: row
+                justify-content: flex-start
+                align-items: center
+                &_line
+                    margin-right: 10px
+                    span
+                        display: block
+                        height: 2px
+                        width: 20px
+                        background-color: $color_1
+                &_text
+                    font-weight: 700
+                    font-size: 22px
+                    line-height: 32px
+                    color: $color_1
+                    transition: 0.5s all
+                    cursor: pointer
+                    &:hover
+                        color: $color_3
+        
+
+.latest_block
+    min-height: 800px
+    .row
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+    h2
+        @include h2
+        margin-top: 150px
+        width: 100%
+        text-align: center
+    &_h2_description
+        @include h2_discr
+        text-align: center
+    &_img
+        padding: 0
+        margin-top: 50px
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        &_main
+            height: 100%
+            width: 95%
+        &_second
+            min-height: 900px
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            &_img
+    &_btn
+        margin-top: 60px 
+        @include btn_red
+        &:hover
+            background: $color_6
+            color: $color_4
+
+.clients_block
+    h2       
+        @include h2
+        margin-top: 150px
+        width: 100%
+    &_h2_description
+        @include h2_discr
+        width: 38%
+    &_content
+        margin-top: 50px
+        margin-bottom: 150px
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        &_cart
+            position: relative
+            transform: translateX(40px)
+            z-index: 100
+            padding: 50px 28px
+            box-shadow: 0px 16px 52px rgba(0, 0, 0, 0.07)
+            border-radius: 2px
+            background: #FFFFFF
+            width: 100%
+            &_icon
+                display: block
+                position: relative
+                left: 420px
+            &_text
+                margin-top: 10px
+                font-weight: 400
+                font-size: 18px
+                line-height: 30px
+                color: $color_5
+            &_name
+                margin-top: 20px
+                font-weight: 700
+                font-size: 18px
+                color: $color_1
+            &_description
+                font-weight: 400
+                font-size: 14px
+                line-height: 26px
+                color: $color_5
+                opacity: 0.7
+        &_img
+            position: relative
+            z-index: -1
+            width: 100%
+            transform: translateX(-50px)
+
+.together_block
+    background: $color_7
+    padding: 150px 0
+    .row
+        display: flex
+        flex-direction: row
+        justify-content: flex-start
+        align-items: center
+    &_content
+        h2
+            @include h2
+            width: 70%
+        &_h2_description
+            @include h2_discr
+            width: 70%
+        &_btn
+            @include btn_red
+            margin-top: 40px
+            &:hover
+                background: $color_6
+                color: $color_4
+
+footer
+    background: $color_1
+    min-height: 100px
+    padding: 50px 0
+    .footer_about
+        &_logo
+            @include logo
+        &_copy
+            margin-top: 5px
+            font-weight: 400
+            font-size: 14px
+            line-height: 28px
+            color: $color_5
+        &_a
+            margin-top: 10px
+            font-weight: 400
+            font-size: 14px
+            line-height: 28px
+            a                
+                color: $color_4
+                text-decoration: none
+                transition: 0.5s all
+                &:hover
+                    color: $color_3
+    .footer_links
+        list-style-type: none
+        &_item
+            margin-bottom: 10px
+            a
+                color: $color_4
+                text-decoration: none
+                transition: 0.5s all
+                &:hover
+                    color: $color_3
+    .footer_subscribe
+        &_text
+            font-weight: 700
+            font-size: 18px
+            color: $color_4
+            margin-bottom: 20px
+        .form-control
+            padding: 0
+            width: 300px
+            height: 55px
+        #inputPassword
+            padding-left: 10px
+        .btn-primary
+            @include btn_red
+            &:hover
+                background: $color_6
+                color: $color_4
+        &_icon
+            display: flex
+            &_item
+                margin-right: 15px
+                background: #353535
+                transition: 0.5s all
+                cursor: pointer
+                &:hover
+                 background: $color_6
